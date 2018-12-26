@@ -1,0 +1,12 @@
+package Ing.SPAutomation.SPAutomation;
+
+public class TestBaseClass extends SPAutomationProperties {
+
+public void StartApplication()
+{
+	System.getProperty("webdriver.driver.chrome", "C:\\Browers\\chromedriver.exe");
+	
+	Params.getProperty("url");
+	
+}
+}

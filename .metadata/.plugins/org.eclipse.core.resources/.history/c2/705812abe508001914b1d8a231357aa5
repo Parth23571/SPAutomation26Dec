@@ -1,0 +1,4 @@
+Reg_FirstName=//input[@name='firstName']
+Reg_LastName=//input[@name='lastName']
+Reg_Phone=//input[@name='phone']
+Contact=

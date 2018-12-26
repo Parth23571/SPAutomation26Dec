@@ -1,0 +1,16 @@
+package Ing.SPAutomation.SPAutomation;
+
+import java.util.Properties;
+
+public class SPAutomationProperties {
+	
+
+	public void Init()
+	{
+	Properties Object=new Properties();
+	
+		
+	}
+	
+
+}

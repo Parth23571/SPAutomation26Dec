@@ -1,0 +1,20 @@
+package Ing.SPAutomation.SPAutomation;
+
+
+import org.openqa.selenium.By;
+import org.testng.annotations.Test;
+
+public class Register extends TestBaseClass {
+ 
+	
+@Test
+  public void Register() {
+	System.out.println("Registaration Started"); 
+StartApplication();
+driver.findElement(By.xpath(Objects.getProperty("Reg_FirstName"))).sendKeys(Params.get(""));
+driver.findElement(By.xpath(Objects.getProperty("Reg_LastName"))).sendKeys(Params.get(""));
+driver.findElement(By.xpath(Objects.getProperty(""))).sendKeys(Params.get(""));
+	
+
+}
+}

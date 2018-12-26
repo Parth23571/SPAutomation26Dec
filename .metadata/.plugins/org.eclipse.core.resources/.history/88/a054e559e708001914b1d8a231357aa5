@@ -1,0 +1,23 @@
+package Ing.SPAutomation.SPAutomation.anotherSuite;
+
+import org.testng.annotations.Test;
+
+import Ing.SPAutomation.SPAutomation.TestBaseClass;
+
+public class Contact extends TestBaseClass{
+  @Test
+  public void Contact() {
+	  
+		System.out.println("Contact Started");
+		StartApplication();
+try{
+		getElementByLink(Objects.getProperty("Contact")).click();
+Thread.sleep(2000);
+}
+catch(Exception e)
+{
+	System.out.println("issue in Contact Test Cases"+e.getMessage());
+	
+}
+}
+}

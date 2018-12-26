@@ -1,0 +1,13 @@
+package Ing.SPAutomation.SPAutomation.anotherSuite;
+
+import org.testng.annotations.Test;
+
+public class Help {
+  @Test
+  public void f() {
+	  
+		System.out.println("Registaration Started");
+		StartApplication();
+
+  }
+}

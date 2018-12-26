@@ -1,0 +1,9 @@
+package Ing.SPAutomation.SPAutomation;
+
+public class TestBaseClass {
+
+public void StartApplication()
+{
+	
+}
+}

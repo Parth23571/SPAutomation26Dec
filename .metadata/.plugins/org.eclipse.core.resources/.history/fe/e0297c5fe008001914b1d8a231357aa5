@@ -1,0 +1,39 @@
+package Ing.SPAutomation.SPAutomation;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.util.Properties;
+
+public class SPAutomationProperties {
+
+public	static Properties Params = null;
+public static Properties Objects = null;
+public static File FParams=null;
+public File FObjects =null;
+public FileInputStream FISParam=null;	
+public FileInputStream FISObjects=null;
+
+public static void Init() {
+		
+		Params = new Properties();
+		Objects = new Properties();
+		
+		try {
+			FParams = new File("C:\\Satish\\xmas\\SPAutomation\\src\\test\\resources\\Param.properties");
+			FObjects = new File("C:\\Satish\\xmas\\SPAutomation\\src\\test\\resources\\Objects.properties");
+
+			FISParam = new FileInputStream(FParams);
+			FISObjects = new FileInputStream(FObjects);
+
+			Params.load(FISParam);
+			Objects.load(FISObjects);
+
+			
+		}
+
+		catch (Exception e) {
+			System.out.println("File Excepton during Loading " + e.getMessage());
+		}
+	}
+
+}

@@ -1,0 +1,14 @@
+package Ing.SPAutomation.SPAutomation;
+
+
+import org.testng.annotations.Test;
+
+public class Register extends SPAutomationProperties {
+ 
+@Test
+  public void f() {
+	  
+	Params.getProperty(arg0)	  
+	 
+  }
+}

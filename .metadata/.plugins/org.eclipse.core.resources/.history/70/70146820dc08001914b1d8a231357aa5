@@ -1,0 +1,10 @@
+package Ing.SPAutomation.SPAutomation;
+
+public class TestBaseClass extends SPAutomationProperties {
+
+public void StartApplication()
+{
+	Params.getProperty("url");
+	
+}
+}

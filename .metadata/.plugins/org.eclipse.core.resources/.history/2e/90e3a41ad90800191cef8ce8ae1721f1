@@ -1,0 +1,13 @@
+package Ing.SPAutomation.SPAutomation;
+
+public class SPAutomationProperties {
+	
+
+	public void Init()
+	{
+	
+		
+	}
+	
+
+}

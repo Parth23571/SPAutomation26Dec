@@ -1,0 +1,41 @@
+package Ing.SPAutomation.SPAutomation;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class TestBaseClass extends SPAutomationProperties {
+
+	public WebDriver driver=null;
+	
+public void StartApplication()
+{
+	try
+	{
+		
+	
+	System.getProperty("webdriver.driver.chrome", "C:\\Browers\\chromedriver.exe");
+
+	driver=new ChromeDriver();
+	
+	driver.get(Params.getProperty("url"));
+	}
+	catch(Exception e)
+	{
+		System.out.println("Appication is not able to Start " +e.getMessage());
+	}
+}
+
+public void StopApplication()
+{
+	try
+	{
+		driver.close();	
+	}
+		
+	catch(Exception e)
+	{
+		System.out.println("Application is not able to Close");
+	}
+}
+
+}

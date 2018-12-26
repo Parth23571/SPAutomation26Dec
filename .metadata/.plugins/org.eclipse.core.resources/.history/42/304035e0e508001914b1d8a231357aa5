@@ -1,0 +1,16 @@
+package Ing.SPAutomation.SPAutomation.anotherSuite;
+
+import org.testng.annotations.Test;
+
+import Ing.SPAutomation.SPAutomation.TestBaseClass;
+
+public class Help extends TestBaseClass{
+  @Test
+  public void help() {
+	  
+		System.out.println("help Started");
+		StartApplication();
+getElementByLink(Objects.getProperty("Contact")).click();
+Thread.sleep(2000);
+  }
+}

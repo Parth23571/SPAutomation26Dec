@@ -1,0 +1,15 @@
+package Ing.SPAutomation.SPAutomation;
+
+
+import org.testng.annotations.Test;
+
+public class Register extends TestBaseClass {
+ 
+	
+@Test
+  public void Register() {
+	System.out.println("Registaration Started"); 
+StartApplication();
+
+}
+}

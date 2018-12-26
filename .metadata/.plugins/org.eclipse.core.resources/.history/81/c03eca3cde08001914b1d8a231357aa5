@@ -1,0 +1,27 @@
+package Ing.SPAutomation.SPAutomation;
+
+
+import org.openqa.selenium.By;
+import org.testng.annotations.Test;
+
+public class Register extends TestBaseClass {
+ 
+	
+@Test
+  public void Register() {
+	System.out.println("Registaration Started"); 
+StartApplication();
+try
+{
+driver.findElement(By.xpath(Objects.getProperty("Reg_FirstName"))).sendKeys(Params.getProperty("FN"));
+driver.findElement(By.xpath(Objects.getProperty("Reg_LastName"))).sendKeys(Params.getProperty("LN"));
+driver.findElement(By.xpath(Objects.getProperty("Reg_Phone"))).sendKeys(Params.getProperty("Phone"));
+
+}
+catch(Exception e)
+{
+	System.out.println("Issue with Registaration "+e.getMessage());
+}
+
+}
+}

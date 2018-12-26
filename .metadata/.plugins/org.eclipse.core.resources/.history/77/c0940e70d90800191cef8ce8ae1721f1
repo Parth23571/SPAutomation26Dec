@@ -1,0 +1,22 @@
+package Ing.SPAutomation.SPAutomation;
+
+import java.io.File;
+import java.util.Properties;
+
+public class SPAutomationProperties {
+	
+
+	public void Init()
+	{
+	Properties Params=new Properties();
+	Properties Objects=new Properties();
+
+
+	File FParams=new File(arg0);
+	File FObjects=new File(pathname)
+	
+		
+	}
+	
+
+}
