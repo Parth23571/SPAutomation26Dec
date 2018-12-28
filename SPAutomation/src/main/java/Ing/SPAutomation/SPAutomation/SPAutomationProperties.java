@@ -20,8 +20,9 @@ public  void Init() {
 		Objects = new Properties();
 		
 		try {
-			FParams = new File("C:\\Satish\\xmas\\SPAutomation\\src\\test\\resources\\Param.properties");
-			FObjects = new File("C:\\Satish\\xmas\\SPAutomation\\src\\test\\resources\\Objects.properties");
+			String path="C:\\Users\\spawal\\git\\SPAutomation26Dec\\SPAutomation\\src\\test\\resources";
+			FParams = new File(path+"\\Param.properties");
+			FObjects = new File(path+"\\Objects.properties");
 
 			FISParam = new FileInputStream(FParams);
 			FISObjects = new FileInputStream(FObjects);
