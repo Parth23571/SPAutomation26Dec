@@ -2,8 +2,10 @@ package Ing.SPAutomation.SPAutomation;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 
 import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.annotations.Test;
@@ -37,4 +39,32 @@ wb.close();
 		}
 
 	}
+
+	@Test
+	public void xlWriteTest() {
+
+		try {
+			String xlspath = "C:\\deleteMe";
+			File f1 = new File(xlspath + "\\Book2.xlsx");
+			FileInputStream ins = new FileInputStream(f1);
+			XSSFWorkbook wb = new XSSFWorkbook(ins);
+
+			XSSFSheet sh = wb.getSheet("Sheet1");
+			int row1 = sh.getLastRowNum();
+
+			FileOutputStream fos=new FileOutputStream(f1);
+			XSSFRow nrow = sh.createRow(row1+1);
+			XSSFCell ncell = nrow.createCell(0);
+			ncell.setCellValue("Updated");
+		wb.write(fos);
+			wb.close();
+System.out.println("Writing in xls updated successfully");
+			}
+			
+		 catch (Exception e) {
+			System.out.println("Errro in Writng xls" + e.getMessage());
+		}
+		
+	}
+
 }
