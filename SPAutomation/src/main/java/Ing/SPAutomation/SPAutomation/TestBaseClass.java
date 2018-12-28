@@ -1,5 +1,6 @@
 package Ing.SPAutomation.SPAutomation;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -78,5 +79,17 @@ System.out.println(aa);
 		 }
 		 return element;
 			
+	}
+
+	public void info(String msg)
+	{
+		
+log.info("info: "+msg);	
+	}
+
+	public void debug(String msg1)
+	{
+		
+log.debug("debug: "+msg1);	
 	}
 }
