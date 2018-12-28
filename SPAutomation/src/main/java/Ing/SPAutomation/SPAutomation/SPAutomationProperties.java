@@ -20,7 +20,7 @@ public  void Init() {
 		Objects = new Properties();
 		
 		try {
-			String path="C:\\Users\\spawal\\git\\SPAutomation26Dec\\SPAutomation\\src\\test\\resources";
+			String path="C:\\deleteMe";
 			FParams = new File(path+"\\Param.properties");
 			FObjects = new File(path+"\\Objects.properties");
 
