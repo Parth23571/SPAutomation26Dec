@@ -78,7 +78,7 @@
           <manifest>
             <addClasspath>true</addClasspath>
             <classpathPrefix>lib/</classpathPrefix>
-            <mainClass>com.mypackage.MyClass</mainClass>
+            <mainClass>Ing.SPAutomation.SPAutomation</mainClass>
           </manifest>
         </archive>
       </configuration>
