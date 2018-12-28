@@ -6,7 +6,7 @@
   <class name="Ing.SPAutomation.SPAutomation.Register"></class>
   <class name="Ing.SPAutomation.SPAutomation.SignOn"></class>
   <class name="Ing.SPAutomation.SPAutomation.anotherSuite.Contact"></class>
-  
-    </classes>
+  <class name="Ing.SPAutomation.SPAutomation.xlsRead"></class>
+ </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
